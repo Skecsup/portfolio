@@ -1,9 +1,9 @@
-import React from "react";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
-import Link from "next/link";
+import React from 'react'
+import { Spotlight } from './ui/Spotlight'
+import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa6'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
@@ -36,7 +36,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             {"Hi I'm Julius, a Next.js Developer based in Slovakia."}
           </p>
-          <Link href={"#about"}>
+          <Link href={'#about'}>
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
