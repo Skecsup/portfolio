@@ -191,22 +191,10 @@ const devOpsTechnologies = [
   },
 ]
 
-const technologies = [
-  ...frontendTechnologies,
-  ...backendTechnologies,
-  ...databaseTechnologies,
-  ...devOpsTechnologies,
-]
-
-const firstRow = technologies.slice(0, Math.ceil(technologies.length / 2))
-const secondRow = technologies.slice(Math.ceil(technologies.length / 2))
-
 const TechnologyCard = ({
-  id,
   title,
   icon,
 }: {
-  id: number
   title: string
   icon: React.ReactNode
 }) => {
@@ -224,7 +212,7 @@ const Clients = () => {
       <h1 className="heading">
         Technologies I used in my <span className="text-purple">career</span>
       </h1>
-      <div className="flex flex-col items-center justify-center mt-10">
+      <div className="h-fit flex flex-col w-full items-center justify-center mt-10 relative">
         <Marquee pauseOnHover className="[--duration:30s]">
           {frontendTechnologies.map((review) => (
             <TechnologyCard key={review.id} {...review} />
@@ -248,8 +236,8 @@ const Clients = () => {
             <TechnologyCard key={review.id} {...review} />
           ))}
         </Marquee>
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-white dark:from-background"></div>
+        {/* <div className="pointer-events-none absolute inset-y-0 -left-12 w-1/3 bg-gradient-to-r from-white dark:from-black-100"></div>
+        <div className="pointer-events-none absolute inset-y-0 -right-12 w-1/3 bg-gradient-to-l from-white dark:from-black-100"></div> */}
       </div>
     </div>
   )

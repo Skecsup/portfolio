@@ -1,20 +1,19 @@
-import { projects } from "@/data";
-import React from "react";
-import { PinContainer } from "./ui/3dPin";
-import { FaLocationArrow } from "react-icons/fa6";
+import { projects } from '@/data/index'
+import React from 'react'
+import { PinContainer } from './ui/3dPin'
+import { FaLocationArrow } from 'react-icons/fa6'
 
 const RecentProjects = () => {
   return (
-    <div className="py-20" id="projects">
+    <div className="py-40" id="projects">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        A small selection of <span className="text-purple"> projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-24 ">
         {projects.map(({ id, iconLists, img, des, link, title }) => (
           <div
             key={id}
-            className=" sm:h-[41rem] lg:min-h-[32.5rem] h-[32rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className=" h-[27.5rem] mt-10 flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[20vh] h-[30vh] lg:h-[30vh] mb-10">
@@ -33,11 +32,11 @@ const RecentProjects = () => {
                 <div className=" flex items-center">
                   {iconLists.map((icon, index) => (
                     <div
-                      key={icon}
+                      key={`icon-${index}`}
                       className="border border-white/[0.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{ transform: `translateX(-${5 * index * 2}px)` }}
                     >
-                      <img src={icon} alt={icon} className="p-2" />
+                      {icon}
                     </div>
                   ))}
                 </div>
@@ -51,7 +50,7 @@ const RecentProjects = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RecentProjects;
+export default RecentProjects
