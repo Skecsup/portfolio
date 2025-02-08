@@ -9,7 +9,7 @@ const Resume = () => {
   return (
     <div className="mt-5 relative">
       <div className={`absolute -bottom-5 right-0 block`}></div>
-      <Link target="_blank" href={'/kicsindy-julius-cv.pdf'}>
+      <Link target="_blank" href={'/kicsindy-cv.pdf'}>
         <MagicButton
           title={'Download CV'}
           icon={<BiDownload />}
