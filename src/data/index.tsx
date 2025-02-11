@@ -2,6 +2,7 @@ import {
   SiJavascript,
   SiNextdotjs,
   SiNotion,
+  SiOpenai,
   SiPostgresql,
   SiPrisma,
   SiShadcnui,
@@ -82,6 +83,21 @@ export const gridItems = [
 
 export const projects = [
   {
+    id: 3,
+    title: 'Profesinal Website for Egis Körmend',
+    des: 'A full-stack site featuring an admin dashboard and automated score updates.',
+    img: '/p3.svg',
+    iconLists: [
+      <SiNextdotjs key="p3-1" />,
+      <SiTailwindcss key="p3-2" />,
+      <SiTypescript key="p3-3" />,
+      <SiShadcnui key="p3-4" />,
+      <SiPostgresql key="p3-5" />,
+      <SiPrisma key="p3-6" />,
+    ],
+    link: 'https://kormend-kosar.vercel.app/',
+  },
+  {
     id: 1,
     title: 'Business Website for Leafsoft',
     des: 'A multi-language, multi-theme dynamic website with smooth performance for LeafSoft.',
@@ -106,25 +122,11 @@ export const projects = [
     ],
     link: 'https://www.zorobe.com',
   },
-  {
-    id: 3,
-    title: 'Profesinal website for Egis Körmend',
-    des: 'A full-stack site featuring an admin dashboard and automated score updates.',
-    img: '/p3.svg',
-    iconLists: [
-      <SiNextdotjs key="p3-1" />,
-      <SiTailwindcss key="p3-2" />,
-      <SiTypescript key="p3-3" />,
-      <SiShadcnui key="p3-4" />,
-      <SiPostgresql key="p3-5" />,
-      <SiPrisma key="p3-6" />,
-    ],
-    link: 'https://kormend-kosar.vercel.app/',
-  },
+
   {
     id: 4,
     title: 'FindYourService - Waitlist',
-    des: 'A multi-language waitlist website built with Next.js using Notion as a database',
+    des: 'A multi-language waitlist website built with Next.js using Notion as a database.',
     img: '/p4.svg',
     iconLists: [
       <SiNextdotjs key="p4-1" />,
@@ -133,6 +135,31 @@ export const projects = [
       <SiNotion key="p4-4" />,
     ],
     link: 'https://fys-woad.vercel.app/hu',
+  },
+  {
+    id: 5,
+    title: 'Promotional Website for Bankai Coin',
+    des: 'A dynamic site highlighting Bankai Coin’s features, benefits, and technology.',
+    img: '/p5.svg',
+    iconLists: [
+      <SiNextdotjs key="p5-1" />,
+      <SiTailwindcss key="p5-2" />,
+      <SiTypescript key="p5-3" />,
+    ],
+    link: 'https://bankaicoin.vercel.app/',
+  },
+  {
+    id: 6,
+    title: 'ChatGpt Clone with Sentiment Analysis',
+    des: 'An AI chatbot clone with sentiment analysis to tailor responses based on user emotions.',
+    img: '/p6.svg',
+    iconLists: [
+      <SiNextdotjs key="p6-1" />,
+      <SiTailwindcss key="p6-2" />,
+      <SiTypescript key="p6-3" />,
+      <SiOpenai key="p6-4" />,
+    ],
+    link: 'https://chatgpt-labor.vercel.app/',
   },
 ]
 
