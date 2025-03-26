@@ -18,7 +18,6 @@ import {
   SiDocker,
   SiVercel,
   SiCypress,
-  SiPlaywright,
   SiGithub,
   SiGithubactions,
   SiMui,
@@ -164,11 +163,7 @@ const devOpsTechnologies = [
     title: 'Cypress',
     icon: <SiCypress />,
   },
-  {
-    id: 26,
-    title: 'Playwright',
-    icon: <SiPlaywright />,
-  },
+
   {
     id: 27,
     title: 'GitHub',

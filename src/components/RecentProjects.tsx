@@ -9,15 +9,15 @@ const RecentProjects = () => {
       <h1 className="heading">
         A small selection of <span className="text-purple"> projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-24 ">
+      <div className="flex flex-wrap items-center justify-center p-4 mt-10 gap-x-24 gap-y-24 sm:gap-y-32 ">
         {projects.map(({ id, iconLists, img, des, link, title }) => (
           <div
             key={id}
-            className="h-[40rem] md:h-[27.5rem] mt-10 flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="h-[27.5rem]  flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[20vh] h-[30vh] lg:h-[30vh] mb-10">
-                <div className=" relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+              <div className="mb-4 relative flex items-center justify-center overflow-hidden sm:w-[570px] w-[80vw]">
+                <div className="relative w-full overflow-hidden rounded-sm sm:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
@@ -41,7 +41,7 @@ const RecentProjects = () => {
                   ))}
                 </div>
                 <div className="flex justify-center items-center">
-                  <p className="">Check Live Site</p>
+                  <p className="line-clamp-1">Check Live Site</p>
                   <FaLocationArrow className="ms-3" color="#cbacg9" />
                 </div>
               </div>
