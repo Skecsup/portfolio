@@ -6,7 +6,7 @@ import Education from '../bentoGridSections/Education'
 import Experience from '../bentoGridSections/Experience'
 import Specialization from '../bentoGridSections/Specialization'
 import Resume from '../bentoGridSections/Resume'
-import { FaBasketball } from 'react-icons/fa6'
+import { GiRose } from 'react-icons/gi'
 
 export const BentoGrid = ({
   className,
@@ -111,7 +111,7 @@ export const BentoGridItem = ({
           {id === 3 && <Specialization />}
           {id === 4 && (
             <div className="relative">
-              <FaBasketball className="w-10 h-10 p-1 animate-bounce text-orange-400/50  absolute top-0 right-0" />
+              <GiRose className="w-20 h-20 text-rose-600 animate-pulse absolute bottom-0 right-0" />
             </div>
           )}
           {id === 5 && <Education />}

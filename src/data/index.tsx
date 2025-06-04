@@ -50,7 +50,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: 'Professional Basketball Team Website',
+    title: 'Flower Shop Website',
     description: 'Currently working on a',
     className: 'lg:col-span-2 md:col-span-3 md:row-span-1',
     imgClassName: '',
