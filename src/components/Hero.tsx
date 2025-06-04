@@ -34,7 +34,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless Experiences"
           />
           <p className=" text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            {"Hi I'm Julius, a Next.js Developer based in Slovakia."}
+            {"Hi I'm Julius, a Next.js Developer based in Hungary/Slovakia."}
           </p>
           <Link href={'#about'}>
             <MagicButton
